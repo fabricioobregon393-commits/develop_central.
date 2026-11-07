@@ -1,0 +1,69 @@
+/* Estilos generales de la aplicación ágil */
+:root {
+    --bg-color: #f4f6f9;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --header-bg: #003366;
+    --header-text: #ffffff;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --header-bg: #1f1f1f;
+    --header-text: #ffffff;
+}
+
+body {
+    font-family: 'Calibri', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: #006699;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2rem;
+}
+
+#kanban-board {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.column {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+    padding: 1rem;
+    min-height: 400px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.column h2 {
+    font-size: 1.1rem;
+    margin-top: 0;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.5rem;
+}
